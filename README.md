@@ -3,3 +3,5 @@
 
 Testanto
 Agora vai?
+
+<a href="https://gonds.github.io/html-css/Exercícios/ex001/index.html"> Executar o exercício 001</a>
