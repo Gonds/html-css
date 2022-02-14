@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style>
+    <!--recomenda-se usar o style em links externos, com o CSS, muito menos deve-se usar a style direto na tag como ATRIBUTO  body-->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag b (não semântica)</p>
+    <p>Nesta frase, tenho um <strong>em destaque</strong> usando o strong (semantica)</p>
+    <!--diferença de b e strong-->
+    <h2>Ttálico / Ênfase</h2>
+    <p>Nesta frase, temos um <!--CTRL+Shift+P = quando abrir uma janela clicar em "Emmet: Quebrar linha com abreviação" - Isso serve para selecionar um texto e escolher que entre em alguma tag desejada--> <i>termo em itálico</i> <del>usando a tag i</del> (nao semantcia)</p>
+    <p>Nesta frase, temos um <em>termo em enfase</em> usando a tag em. "Exemplo que aprendi e resolvi aplicar aqui já, o &lt;sub&gt; e o &lt;sup&gt;, que é o seguinte:" H<sub>2</sub>O, ou o 3<sup>3</sup>. 
+        <!--diferença de em e i-->
+        <!--<sub> serve para deixar a letra abaixo do texo, igual H20 (mas com a letra a baixo), já o <sup> é o contrario, a letra fica em cima, como por exemplo o 3³-->
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK
+    <p>E no outro parágrafo, temos  <mark>outro texto marcado</mark> no final
+    </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um texto grande e um <big>texto pequeno</big> e um <small>texto pequeno</small> nesse parágrafo</p> <!-- a tag big se tornou obsoleta (por isso está vermelha, porque a W3C recomenda não usar mais), pois é uma forma, já a tag small ainda pode ser usada, quando o texto indica alguém a ler o texto pequeno, como por exemplo em um Contrato, quando diz estar em escrito em palavras pequenas, pois essas palavras são importantes para o Contrato (mas isso é só uma opinião do professor Guanabara)-->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele pode ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semantica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family:Helvetica, Arial, sans-serif;
+            /* 
+            Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas
+            
+            em (tamanho atual da fonte, relativo ao m maiusculo), ex (relativo a altura x da fonte), rem (igual em, mas relativo a fonte configurada no body), vw (view width, largura da viewport), vh (view height, altura da viewport), %
+            Recomendação sempre usar em px ou em
+            16px geralmente = 1em
+            1em = 16px
+            1.5em = 24px
+            2em = 32px
+            */
+        }
+
+        h1 {
+            /*font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+            /* shorthand font
+            -font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            font: bold 2em Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eveniet obcaecati aliquam! Eligendi ea doloribus enim, illo tempore dolor nam dignissimos inventore, veritatis maxime sequi corrupti quae nostrum quisquam rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis est assumenda animi tempora quidem. Qui delectus, nostrum consectetur commodi omnis rerum. Porro minus fuga reprehenderit eius sunt quaerat fugit nihil?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt similique error ab sequi, velit praesentium provident, quo commodi excepturi corrupti, nisi enim ad harum maiores. Laborum repellendus provident similique.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores nihil, voluptatem soluta distinctio itaque error harum ipsa eum dignissimos illo temporibus perspiciatis doloribus dolorum ab hic alias laboriosam ea.</p>
+</body>
+</html>

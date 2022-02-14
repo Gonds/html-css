@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {
+            height: 100%;
+        }
+
+        body { /* da pra usar ao inves de 90deg (90graus), dá pra usar os valores to left, to right, to top, to bottom. O 60% significa que o #705E78 ocupa 60% de toda a tela fixed em relação ao #812F33  */
+            background-image:linear-gradient(180deg, #705E78 60%, #812F33 );
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+</body>
+</html>

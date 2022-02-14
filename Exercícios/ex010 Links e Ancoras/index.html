@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode usar meu <a href="https://gustavoguanabara.github.io/" target="_blink" rel="external">repositório público no GitHub</a></p>
+<!--quando for link externo sempre usar o parametro target e valor __blink, pois assim abrirá uma nova aba no navegador, ao inves de sobrepor a pagina. o parametro rel usa o valor external para dizer que o link do href é externo-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blink" rel="external">canal gratuito no youtube</a></p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser , pode acessar também a minha <a href="pag002.html" rel="next" target="self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="Notícias/pag003.html" rel="next" target="self">página de noptícias</a></p>
+<!--criar outras paginas dentro do site é simples, basta criar outro .html (visualizar ao lado na janela do EXPLORADOR<<) e lincar com a tag <a>-->
+<!--usar o parametro rel e o valor next pra dizer ao google que essa é a próxima página-->
+<!--o valor self do parametro target, significa que a página vai abrir na mesma aba-->
+<h1>Links para download</h1>
+<ul>
+    <li><a href="Livro/000001000509882620211017.pdf" download="000001000509882620211017.pdf" type="application/pdf">Baixar o livro PDF</a></li>
+    <li><a href="Livro/000001000509882620211017.rar" download="000001000509882620211017.rar" type="application/rar" >Livro compactado em ZIP</a></li>
+<!--usar os valores applicatio/... para especificar qual o tipo do arquivo-->
+</ul>
+</body>
+</html>

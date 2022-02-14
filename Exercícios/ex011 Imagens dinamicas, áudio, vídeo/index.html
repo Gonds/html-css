@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+<!--o valor 1050px do parametro media da tag source, significa que se a tela tiver no máximo 1050px, a imagem será substituida pela foto-m.png, que tem 700x700px-->
+<!-- quando colocar a terceira tag <source>, deve-se colocar acima da segunda criada, que deve ser colocada acima da tag img, e assim sucessivamente, se não, não vai funcionar-->
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <audio preload="metadata" controls loop> 
+<!--control serve para habilitar a opção de dar o play, e loop é meio óbvio! e o metadata significa que vai carregar os dados antes, e só quando der o play vai carregar a midia-->
+        <source src="midia/open-wide.wav" type="audio/wav">  
+        <source src="midia/open-wide.mp3" type="audio/mpeg">
+<!--tentar usar o maximo possivel de extensoes diferentes para navegadores diferentes poderem carregar-->
+        <p>Infelizmente seu navegador não consegue carregar o áudio (exemplo que seria usado se um navegador não conseguir carregar). <a href="midia/open-wide.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+<!--o parametro preload diz que o site só vai carregar depois que carregar todo o audio, por padrao o valor vem auto, recomenda-se mudar para metadata.-->
+<!-- quando colocar a terceira tag <source>, deve-se colocar acima da segunda criada, que deve ser colocada acima da tag p, explicando que o navegador não carregará a imagem, e assim sucessivamente, se não, não vai funcionar-->
+</body>
+</html>
